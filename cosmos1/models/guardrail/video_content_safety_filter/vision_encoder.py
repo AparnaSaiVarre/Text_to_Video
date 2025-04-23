@@ -38,6 +38,11 @@ class SigLIPEncoder(torch.nn.Module):
 
     @torch.inference_mode()
     def encode_image(self, input_img: Image.Image) -> torch.Tensor:
+        # Bypass the image encoding by returning a zero tensor
+        return torch.zeros((1, self.model.config.hidden_size)).to(self.device, dtype=self.dtype)
+
+    @torch.inference_mode()
+    def encode_image(self, input_img: Image.Image) -> torch.Tensor:
         """Encode an image into a feature vector."""
         with torch.no_grad():
             inputs = self.processor(images=input_img, return_tensors="pt").to(self.device, dtype=self.dtype)

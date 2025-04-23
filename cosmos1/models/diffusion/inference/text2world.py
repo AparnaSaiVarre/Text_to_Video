@@ -31,6 +31,10 @@ def parse_arguments() -> argparse.Namespace:
     # Add common arguments
     add_common_arguments(parser)
 
+#     parser.add_argument(
+#     "--seed", type=int, default=42, help="Random seed for reproducibility"
+# )
+
     # Add text2world specific arguments
     parser.add_argument(
         "--diffusion_transformer_dir",
