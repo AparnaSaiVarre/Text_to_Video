@@ -2,7 +2,7 @@
 <img src="assets/cosmos-logo.png" alt="Platform Logo" width="200">
 </p>
 <br>
-This is a developer-first world foundation model platform designed to help Physical AI developers build their Physical AI systems better and faster. The platform contains:
+This is a developer-first world foundation model platform designed to help Physical AI developers build their Physical AI systems better and faster. The platform contains:\n
 1. Pre-trained models, available via Hugging Face under a permissive open model license that allows commercial use of the models for free.
 2. Training scripts under the Apache 2 License, offered through an open-source AI framework (Framework GitHub) for post-training the models for various downstream Physical AI applications.
 Details of the platform are described in the foundation model platform paper. Preview access is available at build.example.com.
